@@ -10,6 +10,8 @@ public class Program
             
             Console.WriteLine("1. Register Member ");
             Console.WriteLine("2. Display All Members");
+            Console.WriteLine("3. Register Book ");
+            Console.WriteLine("4. Display Book");
             Console.WriteLine("-----------------------");
             Console.WriteLine("Enter your Choice: ");
             Console.WriteLine();
@@ -26,11 +28,18 @@ public class Program
                 case "2":
                     MemberService.DisplayMembers();
                     break;
+                
                 case "3":
-                    running = false;
+                    BookService.AddBook();
                     break;
                 
-            
+                case "4":
+                    BookService.ShowBooks();
+                    break;
+                    
+                case "5":
+                    running = false;
+                    break;
             
             }
             
